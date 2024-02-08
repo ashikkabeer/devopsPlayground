@@ -1,0 +1,23 @@
+"apple": "its a red fruit"
+20: "my roll number"
+--- # documents seperated by ---
+
+# lists
+- apple
+- mango
+- banana
+- APPLE #yaml is case sensitive
+---
+
+# block
+cities:
+  - new delhi
+  - mumbai
+  - kochi
+---
+
+cities: [new delhi, mumbai, kochi]
+---
+{mango:"yello fruit",age:56 } #storing as key-value pair 
+
+... # end of document

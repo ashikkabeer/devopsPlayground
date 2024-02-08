@@ -1,0 +1,79 @@
+# student has sequence type data
+student: !!seq
+  - marks
+  - name
+  - roll_no
+
+# same as 
+student: [marks, name, roll_no]
+
+#some of the keys of the seq will be empyty
+# called sparse seq
+
+sparse seq: 
+  - hey
+  - how
+  - #empty
+  - Null
+  - sup
+
+#nested sequences
+fruits: 
+  - apple
+  - orange
+-
+  - tangerine
+  - lemon
+
+# key: value pair is called map
+!!map
+
+#nested maps
+name: ashik
+role: 
+  age: 21
+  job: student
+
+
+# paris : key may have dupicalte values
+
+!! pairs
+
+pair example: !!pairs
+  - job: student
+  - job: coder
+# this will be an array of hashtables
+#same as
+pair example: !!pairs [job: student, job: coder]
+
+# !!set unique values,
+names: !!set
+? ashik
+? danish
+? joel
+? jithu
+
+# sequence as a value -> use dictionary -> !!omap
+people: !!omap
+ - ashik:
+    name: ashik 
+    age: 21
+  - joel:
+    name: joel
+    age: 21
+
+# reusing some properties
+commonInfo: &info
+  age: 21
+  job: developer
+
+person1:
+  name: ashik
+  <<: *info
+
+
+person2:
+  name: joel
+  <<: *info
+  job: data scientist
+  

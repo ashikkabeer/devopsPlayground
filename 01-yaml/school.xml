@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<School name="MCET" place="kerala">
+   <Students>
+      <name>Ashik</name>
+      <age>21</age>
+      <grade>S6</grade>
+   </Students>
+   <Students>
+      <name>Jithu</name>
+      <age>21</age>
+      <grade>S6</grade>
+   </Students>
+</School>

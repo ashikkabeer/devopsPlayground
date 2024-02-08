@@ -1,0 +1,10 @@
+School:
+  name: MCET
+  place: kerala
+  Students:
+    - name: Ashik
+      age: 21
+      grade: S6
+    - name: Jithu
+      age: 21
+      grade: S6

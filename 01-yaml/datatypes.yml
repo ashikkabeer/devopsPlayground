@@ -1,0 +1,47 @@
+# String variables
+myself: Ashik Kabeer
+name: "Ashik"
+currently: "students"
+
+---
+# the above is same, it's automatically formatted to the below syntax i think
+myself: Ashik Kabeer
+name: Ashik
+currently: students
+
+bio: |
+hey my name is ashik and
+i'm learning yaml
+
+#writing single line in multiple lines cause its long
+messages: >
+this will all
+be in one
+single line #treated as single line cause using > at start
+
+message: !!str hello
+number: 5473
+marks: 98.76
+booleanValue: !!bool No #n, N, false, False, FALSE, y, Y, yes, True, TRUE
+
+# specify the type
+zero: !!int 0
+positiveNum: !!int 45
+negativeNum: !!int -45
+binaryNum: !!int 0b11001
+octalNum: !!int 06574
+hexa: !!int 0x45
+commaValues: !!int +544_000 #540,000
+
+
+# floating point numbers
+marks: !!float 56.89
+infinity: !!float .inf
+not an num: .nan
+
+#nullsurname: !!null Null # null, NULL ~
+~: this is a null key
+
+#dates and time
+# search date and time yaml examples
+date: !!timestamp 2002-12-14
